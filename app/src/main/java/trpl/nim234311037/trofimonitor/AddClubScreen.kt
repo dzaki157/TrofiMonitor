@@ -59,8 +59,7 @@ fun AddClubScreen(onAddClub: (Club) -> Unit) {
         Spacer(modifier = Modifier.height(16.dp))
 
         Button(onClick = {
-            val newClub =
-                Club(clubName, premierLeague, faCup, eflCup, championsLeague, europaLeague)
+            val newClub = Club(clubName, premierLeague, faCup, eflCup, championsLeague, europaLeague)
             onAddClub(newClub) // Panggil fungsi untuk menambahkan klub
             // Reset input setelah menambahkan klub
             clubName = ""

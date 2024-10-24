@@ -1,5 +1,4 @@
 package trpl.nim234311037.trofimonitor
-
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -14,8 +13,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 class MainActivity : ComponentActivity() {
-    private val studentName = "Brandewa Pandu Asmara"
-    private val studentID = "234311034"
+    private val studentName = "Dzaki Anwar Zulfahmi"
+    private val studentID = "234311037"
 
     private val clubs = mutableStateListOf(
         Club("Liverpool", 19, 8, 10, 6, 3),
@@ -90,7 +89,7 @@ class MainActivity : ComponentActivity() {
                     "Manchester City" -> R.drawable.manchester_city
                     "Arsenal" -> R.drawable.arsenal
                     "Tottenham Hotspur" -> R.drawable.tottenham_hotspur
-                    else -> R.drawable.ic_launcher_foreground
+                    else -> R.drawable.ic_launcher_background
                 }
 
                 Image(
@@ -140,7 +139,7 @@ class MainActivity : ComponentActivity() {
                             "Manchester City" -> R.drawable.manchester_city
                             "Arsenal" -> R.drawable.arsenal
                             "Tottenham Hotspur" -> R.drawable.tottenham_hotspur
-                            else -> R.drawable.ic_launcher_foreground
+                            else -> R.drawable.ic_launcher_background
                         }
 
                         Image(
@@ -172,5 +171,5 @@ class MainActivity : ComponentActivity() {
     @Composable
     fun PreviewTrofiMonitorApp() {
         TrofiMonitorApp()
-        }
+    }
 }
